@@ -31,8 +31,8 @@ export function Form(){
     return(
         <Container>
             <h1 className="title">Calcule seu IMC</h1>
-            <Input onchange={event => setWeight(event.target.value)} label="Weight(kg)" placeholder="ex:60"/>
-            <Input onchange={event => setHeight(event.target.value)} label="height(cm)" placeholder="ex:178"/>
+            <Input onchange={event => setWeight(event.target.value)} label="Peso(kg)" placeholder="ex:60"/>
+            <Input onchange={event => setHeight(event.target.value)} label="Altura(cm)" placeholder="ex:178"/>
             <Button onclick={calculateImc} typeButton="button" title="Calcular IMC"/>
             {imc > 0 && 
                 <>
